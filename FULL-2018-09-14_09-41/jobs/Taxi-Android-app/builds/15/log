@@ -1,0 +1,1637 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4AKFrIetaQANnTsFxgfRqQAiqIm7RizJf8pXuJfXrNtjAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQifce8lKL8zBTd4pzEslQANEXW1swAAAA=[0mAndroid-slave (Taxi-Android-app) in workspace /var/workspace/Taxi-Android-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/SynapseLLC/09-Chronicle.git # timeout=10
+Fetching upstream changes from https://github.com/SynapseLLC/09-Chronicle.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/SynapseLLC/09-Chronicle.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/android-cloud-dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/android-cloud-dev^{commit} # timeout=10
+Checking out Revision e0f9aacf1f64dda5c71a1080c4551dcf1510614a (refs/remotes/origin/android-cloud-dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e0f9aacf1f64dda5c71a1080c4551dcf1510614a # timeout=15
+Commit message: "Worked on QA points and updated dragging lib to resolve Duplicate files issue."
+ > git rev-list --no-walk e0f9aacf1f64dda5c71a1080c4551dcf1510614a # timeout=10
+[Taxi-Android-app] $ /bin/sh -xe /tmp/jenkins7684486146764909671.sh
++ /home/jenkins/tools/android-sdk/tools/bin/sdkmanager --licenses
++ yes
+Warning: File /root/.android/repositories.cfg could not be loaded.
+All SDK package licenses accepted.
+done
++ sed -ie s|sdk.dir|#sdk.dir| local.properties
++ sed -ie s|sdk.dir|#sdk.dir| local.propertiese
++ echo sdk.dir=/home/jenkins/tools/android-sdk
++ echo sdk.dir=/home/jenkins/tools/android-sdk
+[Gradle] - Launching build.
+[Taxi-Android-app] $ /var/workspace/Taxi-Android-app/gradlew clean test build
+Starting a Gradle Daemon (subsequent builds will be faster)
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/jenkins/tools/android-sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+File /root/.android/repositories.cfg could not be loaded.
+Checking the license for package Android SDK Build-Tools 26 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Build-Tools 26 accepted.
+Preparing "Install Android SDK Build-Tools 26 (revision: 26.0.0)".
+"Install Android SDK Build-Tools 26 (revision: 26.0.0)" ready.
+Finishing "Install Android SDK Build-Tools 26 (revision: 26.0.0)"
+Installing Android SDK Build-Tools 26 in /home/jenkins/tools/android-sdk/build-tools/26.0.0
+"Install Android SDK Build-Tools 26 (revision: 26.0.0)" complete.
+"Install Android SDK Build-Tools 26 (revision: 26.0.0)" finished.
+Checking the license for package Android SDK Platform 26 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Platform 26 accepted.
+Preparing "Install Android SDK Platform 26 (revision: 2)".
+"Install Android SDK Platform 26 (revision: 2)" ready.
+Finishing "Install Android SDK Platform 26 (revision: 2)"
+Installing Android SDK Platform 26 in /home/jenkins/tools/android-sdk/platforms/android-26
+"Install Android SDK Platform 26 (revision: 2)" complete.
+"Install Android SDK Platform 26 (revision: 2)" finished.
+Checking the license for package Android SDK Platform-Tools in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Platform-Tools accepted.
+Preparing "Install Android SDK Platform-Tools (revision: 28.0.1)".
+"Install Android SDK Platform-Tools (revision: 28.0.1)" ready.
+Finishing "Install Android SDK Platform-Tools (revision: 28.0.1)"
+Installing Android SDK Platform-Tools in /home/jenkins/tools/android-sdk/platform-tools
+"Install Android SDK Platform-Tools (revision: 28.0.1)" complete.
+"Install Android SDK Platform-Tools (revision: 28.0.1)" finished.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/jenkins/tools/android-sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Checking the license for package Android SDK Build-Tools 25 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Build-Tools 25 accepted.
+Preparing "Install Android SDK Build-Tools 25 (revision: 25.0.0)".
+"Install Android SDK Build-Tools 25 (revision: 25.0.0)" ready.
+Finishing "Install Android SDK Build-Tools 25 (revision: 25.0.0)"
+Installing Android SDK Build-Tools 25 in /home/jenkins/tools/android-sdk/build-tools/25.0.0
+"Install Android SDK Build-Tools 25 (revision: 25.0.0)" complete.
+"Install Android SDK Build-Tools 25 (revision: 25.0.0)" finished.
+Checking the license for package Android SDK Platform 22 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Platform 22 accepted.
+Preparing "Install Android SDK Platform 22 (revision: 2)".
+"Install Android SDK Platform 22 (revision: 2)" ready.
+Finishing "Install Android SDK Platform 22 (revision: 2)"
+Installing Android SDK Platform 22 in /home/jenkins/tools/android-sdk/platforms/android-22
+"Install Android SDK Platform 22 (revision: 2)" complete.
+"Install Android SDK Platform 22 (revision: 2)" finished.
+The CompileOptions.bootClasspath property has been deprecated and is scheduled to be removed in Gradle 5.0. Please use the CompileOptions.bootstrapClasspath property instead.
+The setTestClassesDir(File) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use the setTestClassesDirs(FileCollection) method instead.
+The getTestClassesDir() method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use the getTestClassesDirs() method instead.
+The ConfigurableReport.setDestination(Object) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use the method ConfigurableReport.setDestination(File) instead.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/jenkins/tools/android-sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Checking the license for package Android SDK Platform 23 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Platform 23 accepted.
+Preparing "Install Android SDK Platform 23 (revision: 3)".
+"Install Android SDK Platform 23 (revision: 3)" ready.
+Finishing "Install Android SDK Platform 23 (revision: 3)"
+Installing Android SDK Platform 23 in /home/jenkins/tools/android-sdk/platforms/android-23
+"Install Android SDK Platform 23 (revision: 3)" complete.
+"Install Android SDK Platform 23 (revision: 3)" finished.
+Download https://dl.google.com/dl/android/maven2/com/android/support/appcompat-v7/23.2.1/appcompat-v7-23.2.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-v4/23.2.1/support-v4-23.2.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-vector-drawable/23.2.1/support-vector-drawable-23.2.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/animated-vector-drawable/23.2.1/animated-vector-drawable-23.2.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-v4/23.2.1/support-v4-23.2.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-vector-drawable/23.2.1/support-vector-drawable-23.2.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/animated-vector-drawable/23.2.1/animated-vector-drawable-23.2.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/appcompat-v7/23.2.1/appcompat-v7-23.2.1.aar
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/jenkins/tools/android-sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Checking the license for package Android SDK Build-Tools 27 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Build-Tools 27 accepted.
+Preparing "Install Android SDK Build-Tools 27 (revision: 27.0.0)".
+"Install Android SDK Build-Tools 27 (revision: 27.0.0)" ready.
+Finishing "Install Android SDK Build-Tools 27 (revision: 27.0.0)"
+Installing Android SDK Build-Tools 27 in /home/jenkins/tools/android-sdk/build-tools/27.0.0
+"Install Android SDK Build-Tools 27 (revision: 27.0.0)" complete.
+"Install Android SDK Build-Tools 27 (revision: 27.0.0)" finished.
+Checking the license for package Android SDK Platform 27 in /home/jenkins/tools/android-sdk/licenses
+License for package Android SDK Platform 27 accepted.
+Preparing "Install Android SDK Platform 27 (revision: 3)".
+"Install Android SDK Platform 27 (revision: 3)" ready.
+Finishing "Install Android SDK Platform 27 (revision: 3)"
+Installing Android SDK Platform 27 in /home/jenkins/tools/android-sdk/platforms/android-27
+"Install Android SDK Platform 27 (revision: 3)" complete.
+"Install Android SDK Platform 27 (revision: 3)" finished.
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-vision/11.0.2/play-services-vision-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-base/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-base/11.0.2/play-services-base-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-basement/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-basement/11.0.2/play-services-basement-11.0.2.pom
+Download https://jcenter.bintray.com/com/google/android/gms/play-services-vision-common/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-vision-common/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-vision-common/11.0.2/play-services-vision-common-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tasks/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tasks/11.0.2/play-services-tasks-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-v4/25.2.0/support-v4-25.2.0.pom
+Download https://jcenter.bintray.com/com/android/support/support-compat/25.2.0/support-compat-25.2.0.pom
+Download https://jcenter.bintray.com/com/android/support/support-core-utils/25.2.0/support-core-utils-25.2.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-core-ui/25.2.0/support-core-ui-25.2.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-fragment/25.2.0/support-fragment-25.2.0.pom
+Download https://jcenter.bintray.com/com/android/support/support-media-compat/25.2.0/support-media-compat-25.2.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar
+Download https://jcenter.bintray.com/com/android/support/support-compat/25.2.0/support-compat-25.2.0.aar
+Download https://jcenter.bintray.com/com/android/support/support-media-compat/25.2.0/support-media-compat-25.2.0.aar
+Download https://jcenter.bintray.com/com/android/support/support-core-utils/25.2.0/support-core-utils-25.2.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-core-ui/25.2.0/support-core-ui-25.2.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-fragment/25.2.0/support-fragment-25.2.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-v4/25.2.0/support-v4-25.2.0.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-basement/11.0.2/play-services-basement-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tasks/11.0.2/play-services-tasks-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-base/11.0.2/play-services-base-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-vision-common/11.0.2/play-services-vision-common-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-vision/11.0.2/play-services-vision-11.0.2.aar
+Download https://jcenter.bintray.com/junit/junit/4.12/junit-4.12.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+Download https://jcenter.bintray.com/junit/junit/4.12/junit-4.12.jar
+Download https://jcenter.bintray.com/com/anjlab/android/iab/v3/library/maven-metadata.xml
+Download https://jcenter.bintray.com/com/anjlab/android/iab/v3/library/1.0.44/library-1.0.44.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/appcompat-v7/26.0.0/appcompat-v7-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-v4/26.0.0/support-v4-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/cardview-v7/25.0.0/cardview-v7-25.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/recyclerview-v7/25.0.0/recyclerview-v7-25.0.0.pom
+Download https://jcenter.bintray.com/cz/msebera/android/httpclient/4.4.1.2/httpclient-4.4.1.2.pom
+Download https://jcenter.bintray.com/com/github/bumptech/glide/glide/3.7.0/glide-3.7.0.pom
+Download https://jcenter.bintray.com/io/github/openfeign/feign-gson/9.4.0/feign-gson-9.4.0.pom
+Download https://jcenter.bintray.com/io/github/openfeign/parent/9.4.0/parent-9.4.0.pom
+Download https://jcenter.bintray.com/com/amazonaws/aws-android-sdk-core/2.3.8/aws-android-sdk-core-2.3.8.pom
+Download https://jcenter.bintray.com/com/amazonaws/aws-android-sdk-pom/2.3.8/aws-android-sdk-pom-2.3.8.pom
+Download https://jcenter.bintray.com/com/amazonaws/aws-android-sdk-s3/2.3.8/aws-android-sdk-s3-2.3.8.pom
+Download https://jcenter.bintray.com/com/wdullaer/swipeactionadapter/2.0.0/swipeactionadapter-2.0.0.pom
+Download https://jcenter.bintray.com/com/nineoldandroids/library/2.4.0/library-2.4.0.pom
+Download https://jcenter.bintray.com/com/nineoldandroids/parent/2.4.0/parent-2.4.0.pom
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-gcm/11.0.2/play-services-gcm-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-drive/11.0.2/play-services-drive-11.0.2.pom
+Download https://jcenter.bintray.com/com/squareup/retrofit2/retrofit/2.2.0/retrofit-2.2.0.pom
+Download https://jcenter.bintray.com/com/squareup/retrofit2/parent/2.2.0/parent-2.2.0.pom
+Download https://jcenter.bintray.com/com/squareup/retrofit2/converter-gson/2.2.0/converter-gson-2.2.0.pom
+Download https://jcenter.bintray.com/com/squareup/retrofit2/retrofit-converters/2.2.0/retrofit-converters-2.2.0.pom
+Download https://jcenter.bintray.com/com/google/api-client/google-api-client/1.20.0/google-api-client-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/api-client/google-api-client-parent/1.20.0/google-api-client-parent-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-jetty/1.20.0/google-oauth-client-jetty-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-parent/1.20.0/google-oauth-client-parent-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/apis/google-api-services-storage/v1-rev17-1.19.0/google-api-services-storage-v1-rev17-1.19.0.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-storage/11.0.2/firebase-storage-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-core/11.0.2/firebase-core-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database/11.0.2/firebase-database-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-auth/11.0.2/firebase-auth-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-messaging/11.0.2/firebase-messaging-11.0.2.pom
+Download https://jcenter.bintray.com/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.pom
+Download https://jcenter.bintray.com/com/squareup/okhttp/parent/2.7.5/parent-2.7.5.pom
+Download https://jcenter.bintray.com/com/squareup/okhttp3/okhttp/3.5.0/okhttp-3.5.0.pom
+Download https://jcenter.bintray.com/com/squareup/okhttp3/parent/3.5.0/parent-3.5.0.pom
+Download https://jcenter.bintray.com/me/biubiubiu/justifytext/library/1.1/library-1.1.pom
+Download https://jcenter.bintray.com/com/mcxiaoke/volley/library/1.0.7/library-1.0.7.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/design/26.0.0/design-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/26.0.0/support-annotations-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/animated-vector-drawable/26.0.0/animated-vector-drawable-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-vector-drawable/26.0.0/support-vector-drawable-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/multidex/1.0.1/multidex-1.0.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/transition/26.0.0/transition-26.0.0.pom
+Download https://jcenter.bintray.com/com/android/support/support-compat/26.0.0/support-compat-26.0.0.pom
+Download https://jcenter.bintray.com/com/android/support/support-core-utils/26.0.0/support-core-utils-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-core-ui/26.0.0/support-core-ui-26.0.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-fragment/26.0.0/support-fragment-26.0.0.pom
+Download https://jcenter.bintray.com/com/android/support/support-media-compat/26.0.0/support-media-compat-26.0.0.pom
+Download https://jcenter.bintray.com/io/github/openfeign/feign-core/9.4.0/feign-core-9.4.0.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.5/gson-2.5.pom
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-iid/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-iid/11.0.2/play-services-iid-11.0.2.pom
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client/1.20.0/google-oauth-client-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-jdk5/13.0/guava-jdk5-13.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent-jdk5/13.0/guava-parent-jdk5-13.0.pom
+Download https://jcenter.bintray.com/com/google/http-client/google-http-client-jackson2/1.20.0/google-http-client-jackson2-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/http-client/google-http-client-parent/1.20.0/google-http-client-parent-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-java6/1.20.0/google-oauth-client-java6-1.20.0.pom
+Download https://jcenter.bintray.com/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.pom
+Download https://jcenter.bintray.com/org/mortbay/jetty/project/6.1.26/project-6.1.26.pom
+Download https://jcenter.bintray.com/org/mortbay/jetty/jetty-parent/10/jetty-parent-10.pom
+Download https://jcenter.bintray.com/org/eclipse/jetty/jetty-parent/14/jetty-parent-14.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-storage-common/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-storage-common/11.0.2/firebase-storage-common-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-common/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-common/11.0.2/firebase-common-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics/11.0.2/firebase-analytics-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database-connection/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database-connection/11.0.2/firebase-database-connection-11.0.2.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-iid/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-iid/11.0.2/firebase-iid-11.0.2.pom
+Download https://jcenter.bintray.com/com/squareup/okio/okio/1.6.0/okio-1.6.0.pom
+Download https://jcenter.bintray.com/com/squareup/okio/okio-parent/1.6.0/okio-parent-1.6.0.pom
+Download https://jcenter.bintray.com/org/jvnet/animal-sniffer-annotation/1.0/animal-sniffer-annotation-1.0.pom
+Download https://jcenter.bintray.com/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom
+Download https://jcenter.bintray.com/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom
+Download https://jcenter.bintray.com/org/mortbay/jetty/jetty-parent/7/jetty-parent-7.pom
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics-impl/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics-impl/11.0.2/firebase-analytics-impl-11.0.2.pom
+Download https://jcenter.bintray.com/com/google/http-client/google-http-client/1.20.0/google-http-client-1.20.0.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom
+Download https://jcenter.bintray.com/com/squareup/picasso/picasso/2.5.2/picasso-2.5.2.pom
+Download https://jcenter.bintray.com/com/squareup/picasso/picasso-parent/2.5.2/picasso-parent-2.5.2.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/recyclerview-v7/26.0.0/recyclerview-v7-26.0.0.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.7/gson-2.7.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson-parent/2.7/gson-parent-2.7.pom
+Download https://jcenter.bintray.com/com/squareup/okhttp3/okhttp/3.6.0/okhttp-3.6.0.pom
+Download https://jcenter.bintray.com/com/squareup/okhttp3/parent/3.6.0/parent-3.6.0.pom
+Download https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.pom
+Download https://jcenter.bintray.com/com/fasterxml/oss-parent/4/oss-parent-4.pom
+Download https://jcenter.bintray.com/com/squareup/okio/okio/1.11.0/okio-1.11.0.pom
+Download https://jcenter.bintray.com/com/squareup/okio/okio-parent/1.11.0/okio-parent-1.11.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/26.0.0/support-annotations-26.0.0.jar
+Download https://jcenter.bintray.com/com/android/support/support-compat/26.0.0/support-compat-26.0.0.aar
+Download https://jcenter.bintray.com/com/android/support/support-media-compat/26.0.0/support-media-compat-26.0.0.aar
+Download https://jcenter.bintray.com/com/android/support/support-core-utils/26.0.0/support-core-utils-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-core-ui/26.0.0/support-core-ui-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-fragment/26.0.0/support-fragment-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-v4/26.0.0/support-v4-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-vector-drawable/26.0.0/support-vector-drawable-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/animated-vector-drawable/26.0.0/animated-vector-drawable-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/appcompat-v7/26.0.0/appcompat-v7-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/multidex/1.0.1/multidex-1.0.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/recyclerview-v7/26.0.0/recyclerview-v7-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/transition/26.0.0/transition-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/design/26.0.0/design-26.0.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/cardview-v7/25.0.0/cardview-v7-25.0.0.aar
+Download https://jcenter.bintray.com/cz/msebera/android/httpclient/4.4.1.2/httpclient-4.4.1.2.jar
+Download https://jcenter.bintray.com/com/github/bumptech/glide/glide/3.7.0/glide-3.7.0.jar
+Download https://jcenter.bintray.com/org/jvnet/animal-sniffer-annotation/1.0/animal-sniffer-annotation-1.0.jar
+Download https://jcenter.bintray.com/io/github/openfeign/feign-core/9.4.0/feign-core-9.4.0.jar
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.7/gson-2.7.jar
+Download https://jcenter.bintray.com/io/github/openfeign/feign-gson/9.4.0/feign-gson-9.4.0.jar
+Download https://jcenter.bintray.com/com/amazonaws/aws-android-sdk-core/2.3.8/aws-android-sdk-core-2.3.8.jar
+Download https://jcenter.bintray.com/com/amazonaws/aws-android-sdk-s3/2.3.8/aws-android-sdk-s3-2.3.8.jar
+Download https://jcenter.bintray.com/com/wdullaer/swipeactionadapter/2.0.0/swipeactionadapter-2.0.0.aar
+Download https://jcenter.bintray.com/com/nineoldandroids/library/2.4.0/library-2.4.0.jar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-iid/11.0.2/play-services-iid-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-gcm/11.0.2/play-services-gcm-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-drive/11.0.2/play-services-drive-11.0.2.aar
+Download https://jcenter.bintray.com/com/squareup/okio/okio/1.11.0/okio-1.11.0.jar
+Download https://jcenter.bintray.com/com/squareup/okhttp3/okhttp/3.6.0/okhttp-3.6.0.jar
+Download https://jcenter.bintray.com/com/squareup/retrofit2/retrofit/2.2.0/retrofit-2.2.0.jar
+Download https://jcenter.bintray.com/com/squareup/retrofit2/converter-gson/2.2.0/converter-gson-2.2.0.jar
+Download https://jcenter.bintray.com/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar
+Download https://jcenter.bintray.com/com/google/http-client/google-http-client/1.20.0/google-http-client-1.20.0.jar
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client/1.20.0/google-oauth-client-1.20.0.jar
+Download https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar
+Download https://jcenter.bintray.com/com/google/http-client/google-http-client-jackson2/1.20.0/google-http-client-jackson2-1.20.0.jar
+Download https://jcenter.bintray.com/com/google/guava/guava-jdk5/13.0/guava-jdk5-13.0.jar
+Download https://jcenter.bintray.com/com/google/api-client/google-api-client/1.20.0/google-api-client-1.20.0.jar
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-java6/1.20.0/google-oauth-client-java6-1.20.0.jar
+Download https://jcenter.bintray.com/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar
+Download https://jcenter.bintray.com/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar
+Download https://jcenter.bintray.com/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar
+Download https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-jetty/1.20.0/google-oauth-client-jetty-1.20.0.jar
+Download https://jcenter.bintray.com/com/google/apis/google-api-services-storage/v1-rev17-1.19.0/google-api-services-storage-v1-rev17-1.19.0.jar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-storage-common/11.0.2/firebase-storage-common-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-common/11.0.2/firebase-common-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-storage/11.0.2/firebase-storage-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-iid/11.0.2/firebase-iid-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics-impl/11.0.2/firebase-analytics-impl-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics/11.0.2/firebase-analytics-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-core/11.0.2/firebase-core-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database-connection/11.0.2/firebase-database-connection-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database/11.0.2/firebase-database-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-auth/11.0.2/firebase-auth-11.0.2.aar
+Download https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-messaging/11.0.2/firebase-messaging-11.0.2.aar
+Download https://jcenter.bintray.com/com/squareup/picasso/picasso/2.5.2/picasso-2.5.2.jar
+Download https://jcenter.bintray.com/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar
+Download https://jcenter.bintray.com/me/biubiubiu/justifytext/library/1.1/library-1.1.aar
+Download https://jcenter.bintray.com/com/anjlab/android/iab/v3/library/1.0.44/library-1.0.44.jar
+Download https://jcenter.bintray.com/com/mcxiaoke/volley/library/1.0.7/library-1.0.7.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-core/2.2.2/espresso-core-2.2.2.pom
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.1.1/javawriter-2.1.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/runner/0.5/runner-0.5.pom
+Download https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-idling-resource/2.2.2/espresso-idling-resource-2.2.2.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-integration/1.3/hamcrest-integration-1.3.pom
+Download https://jcenter.bintray.com/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom
+Download https://jcenter.bintray.com/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/rules/0.5/rules-0.5.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/exposed-instrumentation-api-publish/0.5/exposed-instrumentation-api-publish-0.5.pom
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.1.1/javawriter-2.1.1.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/exposed-instrumentation-api-publish/0.5/exposed-instrumentation-api-publish-0.5.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/runner/0.5/runner-0.5.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/rules/0.5/rules-0.5.aar
+Download https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.jar
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-idling-resource/2.2.2/espresso-idling-resource-2.2.2.aar
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-integration/1.3/hamcrest-integration-1.3.jar
+Download https://jcenter.bintray.com/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-core/2.2.2/espresso-core-2.2.2.aar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:clean
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:clean
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:clean
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:clean
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:preBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:preDebugBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:checkDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:preReleaseBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportAnimatedVectorDrawable2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportAppcompatV72600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportCardviewV72500Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportDesign2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportMultidex101Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportRecyclerviewV72600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportCompat2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportCoreUi2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportCoreUtils2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportFragment2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportMediaCompat2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportV42600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportSupportVectorDrawable2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComAndroidSupportTransition2600Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesBase1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesBasement1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesDrive1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesGcm1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesIid1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesTasks1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesVision1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleAndroidGmsPlayServicesVisionCommon1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseAnalytics1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseAnalyticsImpl1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseAuth1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseCommon1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseCore1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseDatabase1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseDatabaseConnection1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseIid1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseMessaging1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseStorage1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComGoogleFirebaseFirebaseStorageCommon1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareComWdullaerSwipeactionadapter200Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareMeBiubiubiuJustifytextLibrary11Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:preBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:preReleaseBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:checkReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:preDebugAndroidTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:preDebugBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:preDebugUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:preReleaseUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComAndroidSupportSupportCompat2520Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComAndroidSupportSupportCoreUi2520Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComAndroidSupportSupportCoreUtils2520Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComAndroidSupportSupportFragment2520Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComAndroidSupportSupportMediaCompat2520Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComAndroidSupportSupportV42520Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComGoogleAndroidGmsPlayServicesBase1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComGoogleAndroidGmsPlayServicesBasement1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComGoogleAndroidGmsPlayServicesTasks1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComGoogleAndroidGmsPlayServicesVision1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareComGoogleAndroidGmsPlayServicesVisionCommon1102Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareReleaseDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileLint
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:copyReleaseLint NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateReleaseBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateReleaseResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:incrementalReleaseJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:javaPreCompileRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/GraphicOverlay.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:extractReleaseAnnotations
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeReleaseProguardFiles
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:packageReleaseRenderscript NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:packageReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processReleaseJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformResourcesWithMergeJavaResForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformClassesAndResourcesWithSyncLibJarsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeReleaseJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformNativeLibsWithMergeJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformNativeLibsWithSyncJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:bundleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:preBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:preReleaseBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:checkReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:prepareReleaseDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileLint
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:copyReleaseLint NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeReleaseProguardFiles
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:packageReleaseRenderscript NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateReleaseResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:packageReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateReleaseBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:incrementalReleaseJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:javaPreCompileRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseJavaWithJavacNote: /var/workspace/Taxi-Android-app/library/src/se/emilsjolander/stickylistheaders/DistinctMultiHashMap.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processReleaseJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformResourcesWithMergeJavaResForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeReleaseJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformNativeLibsWithMergeJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformNativeLibsWithSyncJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:bundleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:preBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:preReleaseBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:checkReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:preDebugAndroidTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:preDebugBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:preDebugUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:preReleaseUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareComAndroidSupportAppcompatV72321Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareComAndroidSupportSupportV42321Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareComAndroidSupportSupportVectorDrawable2321Library
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareReleaseDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileLint
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:copyReleaseLint NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateReleaseBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateReleaseResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:incrementalReleaseJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:javaPreCompileRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseJavaWithJavac
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:extractReleaseAnnotations
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeReleaseProguardFiles
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:packageReleaseRenderscript NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:packageReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processReleaseJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformResourcesWithMergeJavaResForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformClassesAndResourcesWithSyncLibJarsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeReleaseJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformNativeLibsWithMergeJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformNativeLibsWithSyncJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:bundleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareDebugDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateDebugBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateDebugResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processDebugGoogleServices
+Parsing json file: /var/workspace/Taxi-Android-app/app/google-services.json
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:incrementalDebugJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:javaPreCompileDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:incrementalDebugUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:javaPreCompileDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:preDebugUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareDebugUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processDebugJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processDebugUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugUnitTestSources UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mockableAndroidJar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:assembleDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:testDebugUnitTest NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:checkReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareReleaseDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateReleaseBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateReleaseResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processReleaseGoogleServices
+Parsing json file: /var/workspace/Taxi-Android-app/app/google-services.json
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processReleaseManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processReleaseResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:incrementalReleaseJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:javaPreCompileRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:incrementalReleaseUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:javaPreCompileReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:preReleaseUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:prepareReleaseUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processReleaseJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:processReleaseUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseUnitTestSources UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:assembleReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:testReleaseUnitTest NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:test UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:checkDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareDebugDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateDebugBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateDebugResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:incrementalDebugJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:javaPreCompileDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/GraphicOverlay.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:incrementalDebugUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:javaPreCompileDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareDebugUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugUnitTestJavaWithJavac
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processDebugJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processDebugUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugUnitTestSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mockableAndroidJar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:assembleDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:testDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:incrementalReleaseUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:javaPreCompileReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:prepareReleaseUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseUnitTestJavaWithJavac
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:processReleaseUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseUnitTestSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:assembleReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:testReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:test
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:preDebugBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:checkDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:prepareDebugDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateDebugBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateDebugResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:packageDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:incrementalDebugJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:javaPreCompileDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugJavaWithJavacNote: /var/workspace/Taxi-Android-app/library/src/se/emilsjolander/stickylistheaders/DistinctMultiHashMap.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:incrementalDebugUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:javaPreCompileDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:preDebugUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:prepareDebugUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugUnitTestJavaWithJavac NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processDebugJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processDebugUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugUnitTestSources UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mockableAndroidJar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:assembleDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:testDebugUnitTest NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:incrementalReleaseUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:javaPreCompileReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:preReleaseUnitTestBuild UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:prepareReleaseUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:processReleaseUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseUnitTestSources UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:assembleReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:testReleaseUnitTest NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:test UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:checkDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareDebugDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugAidl
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugRenderscript
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateDebugBuildConfig
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateDebugResValues
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processDebugManifest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:incrementalDebugJavaCompilationSafeguard
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:javaPreCompileDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugJavaWithJavac
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:incrementalDebugUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:javaPreCompileDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareDebugUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugUnitTestJavaWithJavac NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processDebugJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processDebugUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugUnitTestSources UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mockableAndroidJar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:assembleDebugUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:testDebugUnitTest NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:incrementalReleaseUnitTestJavaCompilationSafeguard NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:javaPreCompileReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:prepareReleaseUnitTestDependencies
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:processReleaseUnitTestJavaRes NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseUnitTestSources UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:assembleReleaseUnitTest
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:testReleaseUnitTest NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:test UP-TO-DATE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:transformClassesWithDexForDebug
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.log.Log$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.servlet.CGI$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.Scanner$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSON$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSON$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSONPojoConvertor$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSONPojoConvertor$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSONPojoConvertor$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSONPojoConvertor$4) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.util.ajax.JSONPojoConvertor$5) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.io.nio.SelectorManager$SelectSet$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.AbstractBuffers$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.HttpConnection$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.HttpFields$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.HttpFields$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.HttpFields$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.HttpFields$4) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.HttpFields$5) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.Request$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.deployer.ContextDeployer$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.nio.SelectChannelConnector$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.security.HashUserRealm$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.security.HashUserRealm$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.security.SecurityHandler$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.security.SecurityHandler$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.security.SslSocketConnector$SslConnection$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.servlet.HashSessionManager$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.jetty.servlet.HashSessionManager$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.resource.JarResource$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+Dex: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.mortbay.xml.XmlParser$Node$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeDebugJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:transformNativeLibsWithMergeJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:transformResourcesWithMergeJavaResForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:validateSigningDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:packageDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:assembleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:lintVitalRelease[Fatal Error] :3:214: The value of attribute "name" associated with an element type "item" must not contain the '<' character.
+Could not read /home/jenkins/tools/android-sdk/platform-tools/api/annotations.zip
+java.io.IOException: Could not parse XML from android/accounts/annotations.xml
+	at com.android.tools.lint.ExternalAnnotationRepository$AnnotationsDatabase.initializePackage(ExternalAnnotationRepository.java:912)
+	at com.android.tools.lint.ExternalAnnotationRepository$AnnotationsDatabase.initializeFromJar(ExternalAnnotationRepository.java:855)
+	at com.android.tools.lint.ExternalAnnotationRepository$AnnotationsDatabase.<init>(ExternalAnnotationRepository.java:603)
+	at com.android.tools.lint.ExternalAnnotationRepository.getDatabase(ExternalAnnotationRepository.java:248)
+	at com.android.tools.lint.ExternalAnnotationRepository.create(ExternalAnnotationRepository.java:179)
+	at com.android.tools.lint.ExternalAnnotationRepository.get(ExternalAnnotationRepository.java:160)
+	at com.android.tools.lint.psi.EcjPsiManager.getAnnotationRepository(EcjPsiManager.java:985)
+	at com.android.tools.lint.psi.EcjPsiJavaEvaluator.getAllAnnotations(EcjPsiJavaEvaluator.java:278)
+	at com.android.tools.lint.checks.SupportAnnotationDetector$CallVisitor.checkCall(SupportAnnotationDetector.java:2426)
+	at com.android.tools.lint.checks.SupportAnnotationDetector$CallVisitor.visitCallExpression(SupportAnnotationDetector.java:2412)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitCallExpression(JavaPsiVisitor.java:951)
+	at com.intellij.psi.JavaElementVisitor.visitMethodCallExpression(JavaElementVisitor.java:183)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitMethodCallExpression(JavaPsiVisitor.java:943)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DelegatingPsiVisitor.visitMethodCallExpression(JavaPsiVisitor.java:1585)
+	at com.android.tools.lint.psi.EcjPsiMethodCallExpression.accept(EcjPsiMethodCallExpression.java:39)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.JavaElementVisitor.visitReferenceElement(JavaElementVisitor.java:231)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitReferenceElement(JavaPsiVisitor.java:1077)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DelegatingPsiVisitor.visitReferenceElement(JavaPsiVisitor.java:1511)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitReferenceExpression(JavaRecursiveElementVisitor.java:70)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitReferenceExpression(JavaPsiVisitor.java:1100)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DelegatingPsiVisitor.visitReferenceExpression(JavaPsiVisitor.java:1580)
+	at com.android.tools.lint.psi.EcjPsiReferenceExpression.accept(EcjPsiReferenceExpression.java:56)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:53)
+	at com.intellij.psi.JavaElementVisitor.visitExpression(JavaElementVisitor.java:103)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitExpression(JavaPsiVisitor.java:722)
+	at com.intellij.psi.JavaElementVisitor.visitPolyadicExpression(JavaElementVisitor.java:384)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitPolyadicExpression(JavaPsiVisitor.java:1457)
+	at com.intellij.psi.JavaElementVisitor.visitBinaryExpression(JavaElementVisitor.java:43)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitBinaryExpression(JavaPsiVisitor.java:556)
+	at com.android.tools.lint.psi.EcjPsiBinaryExpression.accept(EcjPsiBinaryExpression.java:57)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.JavaElementVisitor.visitVariable(JavaElementVisitor.java:328)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitVariable(JavaPsiVisitor.java:1311)
+	at com.intellij.psi.JavaElementVisitor.visitLocalVariable(JavaElementVisitor.java:175)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitLocalVariable(JavaPsiVisitor.java:921)
+	at com.android.tools.lint.psi.EcjPsiLocalVariable.accept(EcjPsiLocalVariable.java:35)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.JavaElementVisitor.visitStatement(JavaElementVisitor.java:272)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitStatement(JavaPsiVisitor.java:1168)
+	at com.intellij.psi.JavaElementVisitor.visitDeclarationStatement(JavaElementVisitor.java:79)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitDeclarationStatement(JavaPsiVisitor.java:656)
+	at com.android.tools.lint.psi.EcjPsiDeclarationStatement.accept(EcjPsiDeclarationStatement.java:47)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.JavaElementVisitor.visitCodeBlock(JavaElementVisitor.java:67)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitCodeBlock(JavaPsiVisitor.java:623)
+	at com.android.tools.lint.psi.EcjPsiCodeBlock.accept(EcjPsiCodeBlock.java:39)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.JavaElementVisitor.visitMethod(JavaElementVisitor.java:179)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitMethod(JavaPsiVisitor.java:932)
+	at com.android.tools.lint.psi.EcjPsiMethod.accept(EcjPsiMethod.java:104)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.JavaElementVisitor.visitClass(JavaElementVisitor.java:55)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitClass(JavaPsiVisitor.java:589)
+	at com.android.tools.lint.psi.EcjPsiClass.accept(EcjPsiClass.java:658)
+	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+	at com.intellij.psi.PsiElementVisitor.visitFile(PsiElementVisitor.java:34)
+	at com.intellij.psi.JavaElementVisitor.visitJavaFile(JavaElementVisitor.java:336)
+	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitJavaFile(JavaPsiVisitor.java:1333)
+	at com.android.tools.lint.psi.EcjPsiJavaFile.accept(EcjPsiJavaFile.java:137)
+	at com.android.tools.lint.client.api.JavaPsiVisitor.lambda$visitFile$3(JavaPsiVisitor.java:315)
+	at com.android.tools.lint.client.api.LintClient.runReadAction(LintClient.java:1285)
+	at com.android.tools.lint.client.api.LintDriver$LintClientWrapper.runReadAction(LintDriver.java:2112)
+	at com.android.tools.lint.client.api.JavaPsiVisitor.visitFile(JavaPsiVisitor.java:311)
+	at com.android.tools.lint.client.api.LintDriver.visitJavaFiles(LintDriver.java:1677)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1654)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1185)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:1039)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:552)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:483)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:143)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:197)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.java:340)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.java:307)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:780)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:747)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:59)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:128)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:46)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$ExecuteTasks.run(DefaultGradleLauncher.java:314)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.runTasks(DefaultGradleLauncher.java:204)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:134)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:69)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:30)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:62)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:82)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:295)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+/var/workspace/Taxi-Android-app/app/src/main/java/com/thesynapses/adapter/AddAssessmentTagViewAdapter.java:80: Error: Unexpected cast to LinearLayout: layout tag was RelativeLayout [WrongViewCast]
+            holder.editView = (LinearLayout) row.findViewById(R.id.editView);
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "WrongViewCast":
+   Keeps track of the view types associated with ids and if it finds a usage
+   of the id in the Java code it ensures that it is treated as the same type.
+
+1 errors, 0 warnings
+
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:compileReleaseShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:generateReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeReleaseAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:transformClassesWithDexForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:mergeReleaseJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:transformNativeLibsWithMergeJniLibsForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:transformResourcesWithMergeJavaResForRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:validateSigningRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:packageRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:assembleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:assemble
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:lint
+Ran lint on variant release: 2769 issues found
+Ran lint on variant debug: 2769 issues found
+Wrote HTML report to file:///var/workspace/Taxi-Android-app/app/build/reports/lint-results.html
+Wrote XML report to file:///var/workspace/Taxi-Android-app/app/build/reports/lint-results.xml
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:check
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:app:build
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:androidJavadocs/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphic.java:22: error: package com.google.android.gms.vision.barcode does not exist
+import com.google.android.gms.vision.barcode.Barcode;
+                                            ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphic.java:44: error: cannot find symbol
+    private volatile Barcode mBarcode;
+                     ^
+  symbol:   class Barcode
+  location: class BarcodeGraphic
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphic.java:70: error: cannot find symbol
+    public Barcode getBarcode() {
+           ^
+  symbol:   class Barcode
+  location: class BarcodeGraphic
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphic.java:78: error: cannot find symbol
+    void updateItem(Barcode barcode) {
+                    ^
+  symbol:   class Barcode
+  location: class BarcodeGraphic
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:21: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.Detector;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:22: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.Tracker;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:23: error: package com.google.android.gms.vision.barcode does not exist
+import com.google.android.gms.vision.barcode.Barcode;
+                                            ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:36: error: cannot find symbol
+class BarcodeGraphicTracker extends Tracker<Barcode> {
+                                    ^
+  symbol: class Tracker
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:36: error: cannot find symbol
+class BarcodeGraphicTracker extends Tracker<Barcode> {
+                                            ^
+  symbol: class Barcode
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:51: error: cannot find symbol
+    public void onNewItem(int id, Barcode item) {
+                                  ^
+  symbol:   class Barcode
+  location: class BarcodeGraphicTracker
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:64: error: package Detector does not exist
+    public void onUpdate(Detector.Detections<Barcode> detectionResults, Barcode item) {
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:64: error: cannot find symbol
+    public void onUpdate(Detector.Detections<Barcode> detectionResults, Barcode item) {
+                                             ^
+  symbol:   class Barcode
+  location: class BarcodeGraphicTracker
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:64: error: cannot find symbol
+    public void onUpdate(Detector.Detections<Barcode> detectionResults, Barcode item) {
+                                                                        ^
+  symbol:   class Barcode
+  location: class BarcodeGraphicTracker
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:93: error: package Detector does not exist
+    public void onMissing(Detector.Detections<Barcode> detectionResults) {
+                                  ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:93: error: cannot find symbol
+    public void onMissing(Detector.Detections<Barcode> detectionResults) {
+                                              ^
+  symbol:   class Barcode
+  location: class BarcodeGraphicTracker
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:107: error: cannot find symbol
+        void onScanned(Barcode barcode);
+                       ^
+  symbol:   class Barcode
+  location: interface BarcodeGraphicTrackerListener
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:109: error: cannot find symbol
+        void onScannedMultiple(List<Barcode> barcodes);
+                                    ^
+  symbol:   class Barcode
+  location: interface BarcodeGraphicTrackerListener
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeGraphicTracker.java:111: error: cannot find symbol
+        void onBitmapScanned(SparseArray<Barcode> sparseArray);
+                                         ^
+  symbol:   class Barcode
+  location: interface BarcodeGraphicTrackerListener
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:22: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:23: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:24: error: package android.support.v4.app does not exist
+import android.support.v4.app.ActivityCompat;
+                             ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:25: error: package android.support.v4.app does not exist
+import android.support.v4.app.Fragment;
+                             ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:37: error: package com.google.android.gms.common does not exist
+import com.google.android.gms.common.ConnectionResult;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:38: error: package com.google.android.gms.common does not exist
+import com.google.android.gms.common.GoogleApiAvailability;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:39: error: package com.google.android.gms.common.api does not exist
+import com.google.android.gms.common.api.CommonStatusCodes;
+                                        ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:40: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.MultiProcessor;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:41: error: package com.google.android.gms.vision.barcode does not exist
+import com.google.android.gms.vision.barcode.Barcode;
+                                            ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:42: error: package com.google.android.gms.vision.barcode does not exist
+import com.google.android.gms.vision.barcode.BarcodeDetector;
+                                            ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:51: error: cannot find symbol
+public class BarcodeReader extends Fragment implements View.OnTouchListener, BarcodeGraphicTracker.BarcodeGraphicTrackerListener {
+                                   ^
+  symbol: class Fragment
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:28: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:29: error: package android.support.annotation does not exist
+import android.support.annotation.RequiresPermission;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:30: error: package android.support.annotation does not exist
+import android.support.annotation.StringDef;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:37: error: package com.google.android.gms.common.images does not exist
+import com.google.android.gms.common.images.Size;
+                                           ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:38: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.Detector;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:39: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.Frame;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSourcePreview.java:21: error: package android.support.annotation does not exist
+import android.support.annotation.RequiresPermission;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSourcePreview.java:22: error: package android.support.v4.content does not exist
+import android.support.v4.content.ContextCompat;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSourcePreview.java:29: error: package com.google.android.gms.common.images does not exist
+import com.google.android.gms.common.images.Size;
+                                           ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:444: error: cannot find symbol
+    public void onScanned(Barcode barcode) {
+                          ^
+  symbol:   class Barcode
+  location: class BarcodeReader
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:451: error: cannot find symbol
+    public void onScannedMultiple(List<Barcode> barcodes) {
+                                       ^
+  symbol:   class Barcode
+  location: class BarcodeReader
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:458: error: cannot find symbol
+    public void onBitmapScanned(SparseArray<Barcode> sparseArray) {
+                                            ^
+  symbol:   class Barcode
+  location: class BarcodeReader
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:133: error: cannot find symbol
+    private Size mPreviewSize;
+            ^
+  symbol:   class Size
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:443: error: cannot find symbol
+    public Size getPreviewSize() {
+           ^
+  symbol:   class Size
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:1032: error: cannot find symbol
+    private byte[] createPreviewBuffer(Size previewSize) {
+                                       ^
+  symbol:   class Size
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:554: error: cannot find symbol
+        void onScanned(Barcode barcode);
+                       ^
+  symbol:   class Barcode
+  location: interface BarcodeReaderListener
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:556: error: cannot find symbol
+        void onScannedMultiple(List<Barcode> barcodes);
+                                    ^
+  symbol:   class Barcode
+  location: interface BarcodeReaderListener
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:558: error: cannot find symbol
+        void onBitmapScanned(SparseArray<Barcode> sparseArray);
+                                         ^
+  symbol:   class Barcode
+  location: interface BarcodeReaderListener
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:1080: error: cannot find symbol
+        private Detector<?> mDetector;
+                ^
+  symbol:   class Detector
+  location: class CameraSource.FrameProcessingRunnable
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:1092: error: cannot find symbol
+        FrameProcessingRunnable(Detector<?> detector) {
+                                ^
+  symbol:   class Detector
+  location: class CameraSource.FrameProcessingRunnable
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:878: error: cannot find symbol
+        private Size mPreview;
+                ^
+  symbol:   class Size
+  location: class SizePair
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:879: error: cannot find symbol
+        private Size mPicture;
+                ^
+  symbol:   class Size
+  location: class SizePair
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:889: error: cannot find symbol
+        public Size previewSize() {
+               ^
+  symbol:   class Size
+  location: class SizePair
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:894: error: cannot find symbol
+        public Size pictureSize() {
+               ^
+  symbol:   class Size
+  location: class SizePair
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:18: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.MultiProcessor;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:19: error: package com.google.android.gms.vision does not exist
+import com.google.android.gms.vision.Tracker;
+                                    ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:20: error: package com.google.android.gms.vision.barcode does not exist
+import com.google.android.gms.vision.barcode.Barcode;
+                                            ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:28: error: package MultiProcessor does not exist
+class BarcodeTrackerFactory implements MultiProcessor.Factory<Barcode> {
+                                                     ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:28: error: cannot find symbol
+class BarcodeTrackerFactory implements MultiProcessor.Factory<Barcode> {
+                                                              ^
+  symbol: class Barcode
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:38: error: cannot find symbol
+    public Tracker<Barcode> create(Barcode barcode) {
+                                   ^
+  symbol:   class Barcode
+  location: class BarcodeTrackerFactory
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:38: error: cannot find symbol
+    public Tracker<Barcode> create(Barcode barcode) {
+           ^
+  symbol:   class Tracker
+  location: class BarcodeTrackerFactory
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeTrackerFactory.java:38: error: cannot find symbol
+    public Tracker<Barcode> create(Barcode barcode) {
+                   ^
+  symbol:   class Barcode
+  location: class BarcodeTrackerFactory
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/ScannerOverlay.java:10: error: package android.support.v4.content does not exist
+import android.support.v4.content.ContextCompat;
+                                 ^
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:94: error: cannot find symbol
+    @StringDef({
+     ^
+  symbol:   class StringDef
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:107: error: cannot find symbol
+    @StringDef({
+     ^
+  symbol:   class StringDef
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:173: error: cannot find symbol
+        private final Detector<?> mDetector;
+                      ^
+  symbol:   class Detector
+  location: class Builder
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:180: error: cannot find symbol
+        public Builder(Context context, Detector<?> detector) {
+                                        ^
+  symbol:   class Detector
+  location: class Builder
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:135: error: cannot find symbol
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+                                   ^
+  symbol:   class Nullable
+  location: class BarcodeReader
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:310: error: cannot find symbol
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+                                                             ^
+  symbol:   class NonNull
+  location: class BarcodeReader
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/BarcodeReader.java:310: error: cannot find symbol
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+                                                                                            ^
+  symbol:   class NonNull
+  location: class BarcodeReader
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:337: error: cannot find symbol
+    @RequiresPermission(Manifest.permission.CAMERA)
+     ^
+  symbol:   class RequiresPermission
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:371: error: cannot find symbol
+    @RequiresPermission(Manifest.permission.CAMERA)
+     ^
+  symbol:   class RequiresPermission
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:523: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:563: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:610: error: cannot find symbol
+    public void autoFocus(@Nullable AutoFocusCallback cb) {
+                           ^
+  symbol:   class Nullable
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:646: error: cannot find symbol
+    public boolean setAutoFocusMoveCallback(@Nullable AutoFocusMoveCallback cb) {
+                                             ^
+  symbol:   class Nullable
+  location: class CameraSource
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSourcePreview.java:55: error: cannot find symbol
+    @RequiresPermission(Manifest.permission.CAMERA)
+     ^
+  symbol:   class RequiresPermission
+  location: class CameraSourcePreview
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSourcePreview.java:69: error: cannot find symbol
+    @RequiresPermission(Manifest.permission.CAMERA)
+     ^
+  symbol:   class RequiresPermission
+  location: class CameraSourcePreview
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSourcePreview.java:88: error: cannot find symbol
+    @RequiresPermission(Manifest.permission.CAMERA)
+     ^
+  symbol:   class RequiresPermission
+  location: class CameraSourcePreview
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:74: warning - Tag @link: reference not found: Detector
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class RequiresPermission not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class StringDef not found.
+javadoc: warning - Class Nullable not found.
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:525: warning - Tag @see: reference not found: Camera.Parameters#FOCUS_MODE_AUTO
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:525: warning - Tag @see: reference not found: Camera.Parameters#FOCUS_MODE_INFINITY
+/var/workspace/Taxi-Android-app/barcode-reader/src/main/java/info/androidhive/barcode/camera/CameraSource.java:525: warning - Tag @see: reference not found: Camera.Parameters#FOCUS_MODE_MACRO
+
+100 warnings
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:androidJavadocsJar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:androidSourcesJar
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:copyDebugLint NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:extractDebugAnnotations
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:generateDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeDebugProguardFiles
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:packageDebugRenderscript NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:packageDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformResourcesWithMergeJavaResForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformClassesAndResourcesWithSyncLibJarsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:mergeDebugJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformNativeLibsWithMergeJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:transformNativeLibsWithSyncJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:bundleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:assembleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:compileReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:assembleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:assemble
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:lint
+Ran lint on variant release: 25 issues found
+Ran lint on variant debug: 25 issues found
+Wrote HTML report to file:///var/workspace/Taxi-Android-app/barcode-reader/build/reports/lint-results.html
+Wrote XML report to file:///var/workspace/Taxi-Android-app/barcode-reader/build/reports/lint-results.xml
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:check
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:barcode-reader:build
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:copyDebugLint NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:generateDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeDebugProguardFiles
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:packageDebugRenderscript NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformResourcesWithMergeJavaResForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:mergeDebugJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformNativeLibsWithMergeJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:transformNativeLibsWithSyncJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:bundleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:assembleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:compileReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:assembleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:assemble
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:///var/workspace/Taxi-Android-app/library/build/reports/lint-results.html
+Wrote XML report to file:///var/workspace/Taxi-Android-app/library/build/reports/lint-results.xml
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:check
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:library:build
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugNdk NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:copyDebugLint NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:extractDebugAnnotations
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugShaders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:generateDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeDebugAssets
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeDebugProguardFiles
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:packageDebugRenderscript NO-SOURCE
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:packageDebugResources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformResourcesWithMergeJavaResForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformClassesAndResourcesWithSyncLibJarsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:mergeDebugJniLibFolders
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformNativeLibsWithMergeJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:transformNativeLibsWithSyncJniLibsForDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:bundleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileDebugSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:assembleDebug
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:compileReleaseSources
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:assembleRelease
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:assemble
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:///var/workspace/Taxi-Android-app/listlibrary/build/reports/lint-results.html
+Wrote XML report to file:///var/workspace/Taxi-Android-app/listlibrary/build/reports/lint-results.xml
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:check
+[8mha:////4BWKAYyN+vQlFuIiUMnLin7k+J8NOn65RH6W7MPX9nKUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:listlibrary:build
+
+[8mha:////4HTgE6sPIB02b5L0rBZFPVZjhEa81WNuNUmMUAysHuxAAAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD SUCCESSFUL in 10m 15s
+273 actionable tasks: 273 executed
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+Archiving artifacts
+Finished: SUCCESS
