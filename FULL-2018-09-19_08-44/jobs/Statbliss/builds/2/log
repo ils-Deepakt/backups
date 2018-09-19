@@ -1,0 +1,125 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4FEkpaW3ms7Dwxri83mdPS0XHfkzQK2n+4nDptluirtlAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQifT+gO3WDcxLLUgGg7dn8yQAAAA==[0mNode-Slave (Node-slave) in workspace /home/jenkins/workspace/Statbliss
+Cloning the remote Git repository
+Cloning repository https://github.com/SynapseLLC/97-Statbliss.git
+ > git init /home/jenkins/workspace/Statbliss # timeout=10
+Fetching upstream changes from https://github.com/SynapseLLC/97-Statbliss.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/SynapseLLC/97-Statbliss.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/SynapseLLC/97-Statbliss.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/SynapseLLC/97-Statbliss.git # timeout=10
+Fetching upstream changes from https://github.com/SynapseLLC/97-Statbliss.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/SynapseLLC/97-Statbliss.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/fin-dev-webapp^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/fin-dev-webapp^{commit} # timeout=10
+Checking out Revision b8651208df361b7301c1aad0c622361002328438 (refs/remotes/origin/fin-dev-webapp)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b8651208df361b7301c1aad0c622361002328438
+Commit message: "Commited code for Unit Test executio of Account Setting section"
+First time build. Skipping changelog.
+[Statbliss] $ /bin/sh -xe /tmp/jenkins7069097764076474520.sh
++ sudo npm install karma --save-dev
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma@3.0.0
+added 72 packages from 419 contributors and audited 22265 packages in 22.261s
+found 36 vulnerabilities (2 low, 22 moderate, 12 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install karma-jasmine karma-chrome-launcher karma-coverage jasmine-core karma-phantomjs-launcher --save-dev
+
+> phantomjs-prebuilt@2.1.16 install /home/jenkins/node_modules/phantomjs-prebuilt
+> node install.js
+
+PhantomJS not found on PATH
+Downloading https://github.com/Medium/phantomjs/releases/download/v2.1.1/phantomjs-2.1.1-linux-x86_64.tar.bz2
+Saving to /tmp/phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2
+Receiving...
+
+Received 22866K total.
+Extracting tar contents (via spawned process)
+Removing /home/jenkins/node_modules/phantomjs-prebuilt/lib/phantom
+Copying extracted folder /tmp/phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2-extract-1537271100098/phantomjs-2.1.1-linux-x86_64 -> /home/jenkins/node_modules/phantomjs-prebuilt/lib/phantom
+Writing location.js file
+Done. Phantomjs binary available at /home/jenkins/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma-chrome-launcher@2.2.0
++ karma-jasmine@1.1.2
++ karma-phantomjs-launcher@1.0.4
++ karma-coverage@1.1.2
++ jasmine-core@3.2.1
+added 23 packages from 129 contributors and audited 22834 packages in 60.01s
+found 42 vulnerabilities (2 low, 26 moderate, 14 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install karma-jenkins-reporter --save-dev
+npm WARN deprecated karma-jenkins-reporter@0.0.2: Currently not maintained
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma-jenkins-reporter@0.0.2
+added 2 packages from 7 contributors and audited 23001 packages in 9.013s
+found 46 vulnerabilities (2 low, 30 moderate, 14 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install karma-threshold-reporter --save-dev
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma-threshold-reporter@0.1.15
+added 15 packages from 104 contributors and audited 23068 packages in 10.258s
+found 48 vulnerabilities (2 low, 30 moderate, 16 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install angular-mocks@1.6.7
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ angular-mocks@1.6.7
+added 1 package from 1 contributor in 16.733s
++ sudo npm install -g karma-cli
+/usr/bin/karma -> /usr/lib/node_modules/karma-cli/bin/karma
++ karma-cli@1.0.1
+added 3 packages from 12 contributors in 0.825s
++ sudo karma start unitTest/karma.conf.js
+[32m18 09 2018 11:45:47.693:INFO [karma]: [39mKarma v3.0.0 server started at http://0.0.0.0:9876/
+[32m18 09 2018 11:45:47.695:INFO [launcher]: [39mLaunching browser PhantomJS with unlimited concurrency
+[32m18 09 2018 11:45:47.724:INFO [launcher]: [39mStarting browser PhantomJS
+[32m18 09 2018 11:45:48.021:INFO [PhantomJS 2.1.1 (Linux 0.0.0)]: [39mConnected on socket -kRpZw-I-qyxfqv2AAAA with id 63400232
+TOTAL: 1 FAILED, 58 SUCCESS
+
+==================== Coverage / Threshold summary =============================
+Statements   : 54.92% ( 173/315 ) Threshold : 20%
+Branches     : 44% ( 44/100 ) Threshold : 20%
+Functions    : 76% ( 19/25 ) Threshold : 20%
+Lines        : 54.92% ( 173/315 ) Threshold : 20%
+================================================================================
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

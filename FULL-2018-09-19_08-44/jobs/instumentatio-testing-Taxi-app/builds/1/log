@@ -1,0 +1,10 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4AKFrIetaQANnTsFxgfRqQAiqIm7RizJf8pXuJfXrNtjAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQifce8lKL8zBTd4pzEslQANEXW1swAAAA=[0mAndroid-slave (Taxi-Android-app) in workspace /var/workspace/instumentatio-testing-Taxi-app
+TCP port allocation complete
+[android] Determination of SDK root failed
+	['/var/tools/android-sdk']: Does not appear to be a valid directory
+	
+[android] Required Android tools not found in PATH; cannot continue
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: No test report files were found. Configuration error?
+Finished: NOT_BUILT

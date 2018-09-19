@@ -1,0 +1,25 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4CSkwZhRm2v519wJE72cZssOQsiDDhJPUj4audppPktYAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQi/eBUoPGZpbm6wTmJZakA3pUoS80AAAA=[0mSelenium-Slave (SeleniumTest) in workspace /var/workspace/Selenium-automation-jobs
+Unable to auto-install JDK until the license is accepted.
+Unable to auto-install JDK until the license is accepted.
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/SynapseLLC/48-DPS.git # timeout=10
+Fetching upstream changes from https://github.com/SynapseLLC/48-DPS.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/SynapseLLC/48-DPS.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/automation_script^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/automation_script^{commit} # timeout=10
+Unable to auto-install JDK until the license is accepted.
+Checking out Revision 7c2b07adf50c58bfb28277830cafb21bdd908e07 (refs/remotes/origin/automation_script)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7c2b07adf50c58bfb28277830cafb21bdd908e07
+Commit message: "Script for preview, update, search, filters, status and pagination[#160508781]"
+ > git rev-list --no-walk 7c2b07adf50c58bfb28277830cafb21bdd908e07 # timeout=10
+Unable to auto-install JDK until the license is accepted.
+[Selenium-automation-jobs] $ mvn -f DPS/pom.xml clean test
+Error: JAVA_HOME is not defined correctly.
+  We cannot execute /var/tools/hudson.model.JDK/bin/java
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,13 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4FEkpaW3ms7Dwxri83mdPS0XHfkzQK2n+4nDptluirtlAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQifT+gO3WDcxLLUgGg7dn8yQAAAA==[0mNode-Slave (Node-slave) in workspace /var/workspace/Node.js-project
+Cloning the remote Git repository
+Cloning repository https://github.com/SynapseLLC/09-Chronicle.git
+ > git init /var/workspace/Node.js-project # timeout=10
+Fetching upstream changes from https://github.com/SynapseLLC/09-Chronicle.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/SynapseLLC/09-Chronicle.git +refs/heads/*:refs/remotes/origin/*
+Build was aborted
+Aborted by [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Archiving artifacts
+Finished: ABORTED

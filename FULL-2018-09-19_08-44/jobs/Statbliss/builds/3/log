@@ -1,0 +1,105 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4FEkpaW3ms7Dwxri83mdPS0XHfkzQK2n+4nDptluirtlAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQifT+gO3WDcxLLUgGg7dn8yQAAAA==[0mNode-Slave (Node-slave) in workspace /home/jenkins/workspace/Statbliss
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/SynapseLLC/97-Statbliss.git # timeout=10
+Fetching upstream changes from https://github.com/SynapseLLC/97-Statbliss.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/SynapseLLC/97-Statbliss.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/fin-dev-webapp^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/fin-dev-webapp^{commit} # timeout=10
+Checking out Revision b8651208df361b7301c1aad0c622361002328438 (refs/remotes/origin/fin-dev-webapp)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b8651208df361b7301c1aad0c622361002328438
+Commit message: "Commited code for Unit Test executio of Account Setting section"
+ > git rev-list --no-walk b8651208df361b7301c1aad0c622361002328438 # timeout=10
+[Statbliss] $ /bin/sh -xe /tmp/jenkins3458714995891127901.sh
++ sudo npm install karma --save-dev
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma@3.0.0
+updated 1 package and audited 23069 packages in 8.957s
+found 48 vulnerabilities (2 low, 30 moderate, 16 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install karma-jasmine karma-chrome-launcher karma-coverage jasmine-core karma-phantomjs-launcher --save-dev
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma-jasmine@1.1.2
++ karma-chrome-launcher@2.2.0
++ jasmine-core@3.2.1
++ karma-phantomjs-launcher@1.0.4
++ karma-coverage@1.1.2
+updated 5 packages and audited 23069 packages in 8.096s
+found 48 vulnerabilities (2 low, 30 moderate, 16 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install karma-jenkins-reporter --save-dev
+npm WARN deprecated karma-jenkins-reporter@0.0.2: Currently not maintained
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma-jenkins-reporter@0.0.2
+updated 1 package and audited 23069 packages in 9.498s
+found 48 vulnerabilities (2 low, 30 moderate, 16 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install karma-threshold-reporter --save-dev
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ karma-threshold-reporter@0.1.15
+updated 1 package and audited 23069 packages in 9.054s
+found 48 vulnerabilities (2 low, 30 moderate, 16 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install angular-mocks@1.6.7
+npm WARN saveError ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/home/jenkins/package.json'
+npm WARN @angular/core@2.4.10 requires a peer of rxjs@^5.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN jenkins No description
+npm WARN jenkins No repository field.
+npm WARN jenkins No README data
+npm WARN jenkins No license field.
+
++ angular-mocks@1.6.7
+updated 1 package and audited 23069 packages in 8.624s
+found 48 vulnerabilities (2 low, 30 moderate, 16 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
++ sudo npm install -g karma-cli
+/usr/bin/karma -> /usr/lib/node_modules/karma-cli/bin/karma
++ karma-cli@1.0.1
+updated 1 package in 0.532s
++ sudo karma start unitTest/karma.conf.js
+[32m18 09 2018 11:57:09.991:INFO [karma]: [39mKarma v3.0.0 server started at http://0.0.0.0:9876/
+[32m18 09 2018 11:57:09.993:INFO [launcher]: [39mLaunching browser PhantomJS with unlimited concurrency
+[32m18 09 2018 11:57:09.997:INFO [launcher]: [39mStarting browser PhantomJS
+[32m18 09 2018 11:57:10.182:INFO [PhantomJS 2.1.1 (Linux 0.0.0)]: [39mConnected on socket ZKXber5v0pcs0DNEAAAA with id 47072837
+TOTAL: 59 SUCCESS
+
+==================== Coverage / Threshold summary =============================
+Statements   : 54.6% ( 172/315 ) Threshold : 20%
+Branches     : 43% ( 43/100 ) Threshold : 20%
+Functions    : 76% ( 19/25 ) Threshold : 20%
+Lines        : 54.6% ( 172/315 ) Threshold : 20%
+================================================================================
+Finished: SUCCESS

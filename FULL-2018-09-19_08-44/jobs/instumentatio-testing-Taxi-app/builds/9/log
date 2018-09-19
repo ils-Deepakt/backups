@@ -1,0 +1,33 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4AKFrIetaQANnTsFxgfRqQAiqIm7RizJf8pXuJfXrNtjAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQifce8lKL8zBTd4pzEslQANEXW1swAAAA=[0mAndroid-slave (Taxi-Android-app) in workspace /var/workspace/instumentatio-testing-Taxi-app
+TCP port allocation complete
+$ /var/tools/android-sdk/tools/bin/avdmanager list target
+[android] Using Android SDK: /var/tools/android-sdk
+[android] Waiting 5 seconds before starting emulator...
+$ /var/tools/android-sdk/platform-tools/adb start-server
+* daemon not running; starting now at tcp:5857
+* daemon started successfully
+$ /var/tools/android-sdk/platform-tools/adb start-server
+[android] Starting Android emulator
+$ /var/tools/android-sdk/emulator/emulator -ports 5768,5769 -report-console tcp:5812,max=60 -avd test -no-window -verbose
+[140556321023808]:VERBOSE:android/android-emu/android/base/files/IniFile.cpp:101:Line 4: Skipped comment line.
+[140556321023808]:VERBOSE:android/android-emu/android/base/files/IniFile.cpp:101:Line 4: Skipped comment line.
+[140556321023808]:VERBOSE:android/android-emu/android/base/files/IniFile.cpp:101:Line 4: Skipped comment line.
+[140556321023808]:VERBOSE:android/android-emu/android/base/files/IniFile.cpp:101:Line 4: Skipped comment line.
+[140556321023808]:VERBOSE:android/android-emu/android/base/files/IniFile.cpp:101:Line 4: Skipped comment line.
+[140556321023808]:VERBOSE:android/android-emu/android/base/files/IniFile.cpp:101:Line 4: Skipped comment line.
+PANIC: Cannot find AVD system path. Please define ANDROID_SDK_ROOT
+emulator: Android emulator version 27.3.10.0 (build_id 4969155) (CL:751f3c993c814a52adf144c159615ce457c2d282)
+emulator: Found AVD name 'test'
+emulator: Found AVD target architecture: x86
+emulator: argv[0]: '/var/tools/android-sdk/emulator/emulator'; program directory: '/var/tools/android-sdk/emulator'
+emulator:  Not a directory: /var/tools/android-sdk/~/tools/android-sdk/system-images/android-23/google_apis/x86/
+
+emulator: Cannot find system image path. Please define ANDROID_SDK_ROOT
+emulator: Auto-config: -engine classic (based on configuration)
+emulator:  Not a directory: /var/tools/android-sdk/~/tools/android-sdk/system-images/android-23/google_apis/x86/
+
+[android] Emulator did not appear to start; giving up
+[android] Stopping Android emulator
+$ /var/tools/android-sdk/platform-tools/adb kill-server
+Finished: NOT_BUILT

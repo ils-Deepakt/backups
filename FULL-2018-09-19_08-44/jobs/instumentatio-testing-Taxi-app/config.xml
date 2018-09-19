@@ -1,0 +1,65 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Instrumentation-testing Taxi app</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.copyartifact.CopyArtifactPermissionProperty plugin="copyartifact@1.41">
+      <projectNameList>
+        <string>instumentatio-testing-Taxi-app</string>
+      </projectNameList>
+    </hudson.plugins.copyartifact.CopyArtifactPermissionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>Android-slave</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>yes | /home/jenkins/tools/android-sdk/tools/bin/sdkmanager --licenses
+sed -ie &quot;s|sdk.dir|#sdk.dir|&quot; local.properties
+sed -ie &quot;s|sdk.dir|#sdk.dir|&quot; local.propertiese
+echo sdk.dir=/home/jenkins/tools/android-sdk &gt; local.properties
+echo sdk.dir=/home/jenkins/tools/android-sdk &gt; local.propertiese
+</command>
+    </hudson.tasks.Shell>
+    <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.41">
+      <project>Taxi-Android-app</project>
+      <filter>app/build/outputs/apk/*.apk</filter>
+      <target></target>
+      <excludes></excludes>
+      <selector class="hudson.plugins.copyartifact.StatusBuildSelector"/>
+      <doNotFingerprintArtifacts>false</doNotFingerprintArtifacts>
+    </hudson.plugins.copyartifact.CopyArtifact>
+    <hudson.plugins.android__emulator.InstallBuilder plugin="android-emulator@3.0">
+      <apkFile>app/build/outputs/apk/app-debug.apk</apkFile>
+      <uninstallFirst>true</uninstallFirst>
+      <failOnInstallFailure>true</failOnInstallFailure>
+    </hudson.plugins.android__emulator.InstallBuilder>
+    <hudson.tasks.Shell>
+      <command>adb shell am instrument</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <org.jvnet.hudson.plugins.port__allocator.PortAllocator plugin="port-allocator@1.8">
+      <ports/>
+    </org.jvnet.hudson.plugins.port__allocator.PortAllocator>
+    <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@3.0">
+      <avdName>test</avdName>
+      <hardwareProperties/>
+      <wipeData>false</wipeData>
+      <showWindow>false</showWindow>
+      <useSnapshots>false</useSnapshots>
+      <deleteAfterBuild>false</deleteAfterBuild>
+      <startupDelay>5</startupDelay>
+      <startupTimeout>0</startupTimeout>
+      <commandLineOptions>-verbose</commandLineOptions>
+      <executable></executable>
+    </hudson.plugins.android__emulator.AndroidEmulator>
+  </buildWrappers>
+</project>

@@ -1,0 +1,65 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4AKFrIetaQANnTsFxgfRqQAiqIm7RizJf8pXuJfXrNtjAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQifce8lKL8zBTd4pzEslQANEXW1swAAAA=[0mAndroid-slave (Taxi-Android-app) in workspace /var/workspace/instumentatio-testing-Taxi-app
+TCP port allocation complete
+$ /var/tools/android-sdk/tools/bin/avdmanager list target
+[android] Using Android SDK: /var/tools/android-sdk
+[android] Waiting 5 seconds before starting emulator...
+$ /var/tools/android-sdk/platform-tools/adb start-server
+* daemon not running; starting now at tcp:5871
+* daemon started successfully
+$ /var/tools/android-sdk/platform-tools/adb start-server
+[android] Starting Android emulator
+$ /var/tools/android-sdk/emulator/emulator -ports 5736,5737 -report-console tcp:5859,max=60 -avd test -no-window -verbose
+Couldn't statvfs() path: No such file or directory
+emulator: Android virtual device file at: /home/jenkins/.android/avd/test.ini
+emulator: virtual device content at /home/jenkins/.android/avd/test.avd
+emulator: virtual device config file: /home/jenkins/.android/avd/test.avd/config.ini
+emulator: using core hw config path: /home/jenkins/.android/avd/test.avd/hardware-qemu.ini
+emulator: using snapshot lock path: /home/jenkins/.android/avd/test.avd/snapshot.lock
+emulator: using multi-instance lock path: /home/jenkins/.android/avd/test.avd/multiinstance.lock
+emulator: Found AVD target API level: 23
+emulator: Read property file at /var/tools/android-sdk/system-images/android-23/google_apis/x86//build.prop
+emulator: No boot.prop property file found.
+emulator: Warning: config.ini contains invalid skin.path entry: (null)
+emulator: autoconfig: -skin HVGA
+emulator: autoconfig: -skindir (null)
+emulator: autoconfig: -kernel /var/tools/android-sdk/system-images/android-23/google_apis/x86//kernel-ranchu
+emulator: Target arch = 'x86'
+emulator: Auto-config: -qemu -cpu qemu32
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /var/tools/android-sdk/system-images/android-23/google_apis/x86//ramdisk.img
+emulator: Using initial system image: /var/tools/android-sdk/system-images/android-23/google_apis/x86//system.img
+emulator: No vendor image
+emulator: autoconfig: -data /home/jenkins/.android/avd/test.avd/userdata-qemu.img
+emulator: autoconfig: -initdata /home/jenkins/.android/avd/test.avd/userdata.img
+emulator: autoconfig: -cache /home/jenkins/.android/avd/test.avd/cache.img
+emulator: Increasing RAM size to 1024MB
+emulator: VM heap size 0MB is below hardware specified minimum of 192MB,setting it to that value
+emulator: System image is read only
+emulator: Found 2 DNS servers: 8.8.8.8 4.2.2.2
+emulator: skin name 'HVGA' aliased to '320x480'
+emulator: found magic skin width=320 height=480 bpp=16
+
+emulator: Creating empty ext4 cache partition: /home/jenkins/.android/avd/test.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+emulator: CPU Acceleration: DISABLED
+emulator: CPU Acceleration status: KVM requires a CPU that supports vmx or svm
+emulator: ERROR: x86 emulation currently requires hardware acceleration!
+Please ensure KVM is properly installed and usable.
+CPU acceleration status: KVM requires a CPU that supports vmx or svm
+[android] Emulator did not appear to start; giving up
+[android] Stopping Android emulator
+$ /var/tools/android-sdk/platform-tools/adb kill-server
+Finished: NOT_BUILT

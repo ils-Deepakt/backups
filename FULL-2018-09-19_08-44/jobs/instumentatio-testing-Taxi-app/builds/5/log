@@ -1,0 +1,22 @@
+Started by user [8mha:////4HqSc4Rw0Cgcqnp+ci3OPIMHsb/fCQoXN6DcFqbs5AOiAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYe/dLi1CL9lNTUgsRsAIbYXkfBAAAA[0mDeepak Thakur
+Building remotely on [8mha:////4AKFrIetaQANnTsFxgfRqQAiqIm7RizJf8pXuJfXrNtjAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQifce8lKL8zBTd4pzEslQANEXW1swAAAA=[0mAndroid-slave (Taxi-Android-app) in workspace /var/workspace/instumentatio-testing-Taxi-app
+TCP port allocation complete
+$ /var/tools/android-sdk/tools/bin/avdmanager list target
+[android] The configured Android platform needs to be installed: android-23
+[android] Installing the 'android-23' SDK component(s)...
+$ /var/tools/android-sdk/tools/bin/sdkmanager --include_obsolete platforms;android-23
+Warning: File /root/.android/repositories.cfg could not be loaded.
+done
+[android] Using Android SDK: /var/tools/android-sdk
+[android] Waiting 5 seconds before starting emulator...
+$ /var/tools/android-sdk/platform-tools/adb start-server
+* daemon not running; starting now at tcp:5831
+* daemon started successfully
+$ /var/tools/android-sdk/platform-tools/adb start-server
+[android] Starting Android emulator
+$ /var/tools/android-sdk/emulator/emulator -ports 5716,5717 -report-console tcp:5844,max=60 -avd test -no-window
+PANIC: Cannot find AVD system path. Please define ANDROID_SDK_ROOT
+[android] Emulator did not appear to start; giving up
+[android] Stopping Android emulator
+$ /var/tools/android-sdk/platform-tools/adb kill-server
+Finished: NOT_BUILT
